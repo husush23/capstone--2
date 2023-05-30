@@ -5,6 +5,7 @@ import fetchData from './modules/getMovies';
 import createLike from './modules/createLikes';
 import getItemLikes from './modules/getLikeCount';
 import updateLikes from './modules/updateLikes';
+import { addComment, getComment } from './modules/addcomments.js';
 
 fetchData();
 display();

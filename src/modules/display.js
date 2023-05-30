@@ -6,11 +6,10 @@ const display = async () => {
   const res = await fetchData();
   res.forEach((res, i) => {
     const itemId = 'item4';
-    const likes = getItemLikes(appId, itemId).then(res => res);
-    console.log(likes);
+    const likes = getItemLikes(appId, itemId).then((res) => res);
 
     const src = res.image.original;
-    const name = res.name;
+    const { name } = res;
 
     const container = document.querySelector('.cards-container');
 

@@ -1,12 +1,12 @@
 const updateLikes = async () => {
   const parentEl = document.querySelector('.cards-container');
-  parentEl.addEventListener('click', e => {
+  parentEl.addEventListener('click', (e) => {
     if (e.target.matches('.fa-heart')) {
       //   addLike();
     }
   });
 
-  const addLike = e => {
+  const addLike = (e) => {
     // const button = e.target;
     // const cardId = parentEl.childNodes[1];
   };
@@ -15,7 +15,7 @@ const updateLikes = async () => {
 // Get all the like buttons
 const parentEl = document.querySelector('.cards-container');
 
-parentEl.addEventListener('click', e => {
+parentEl.addEventListener('click', (e) => {
   if (e.target.matches('.fa-heart')) {
     alert('hi');
   }
@@ -29,7 +29,7 @@ parentEl.addEventListener('click', e => {
 // Event listener function for the like button click
 function handleLikeButtonClick(event) {
   const button = event.target;
-  const cardId = button.dataset.cardId;
+  const { cardId } = button.dataset;
   const likesCountElement = document.getElementById(`likes-count-${cardId}`);
 
   // Update the like count

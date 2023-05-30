@@ -12,9 +12,8 @@ async function getItemLikes(appId, itemId) {
       const likesData = await response.json();
       //   console.log('Likes:', likesData);
       return likesData.length;
-    } else {
-      console.log('Failed to retrieve likes. Status code:', response.status);
     }
+    console.log('Failed to retrieve likes. Status code:', response.status);
   } catch (error) {
     console.error('Error while retrieving likes:', error);
   }
