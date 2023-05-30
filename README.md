@@ -24,16 +24,16 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Leader board <a name="about-project"></a>
+# 📖 Capstone--2 <a name="about-project"></a>
 
-**Leader board ** is a project based on calling API's to get data from.
+**Capstone--2** is a project based on calling API's to get data from.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>portfolio website</summary>
+  <summary>Capstone--2</summary>
   
 </details>
 
@@ -52,7 +52,7 @@ In order to run this project you need: only to clone this github repo
 Clone this repository to your desired folder:
 
 - cd my-folder
-- git clone 'https://github.com/husush23/Leader-board.git'
+- git clone 'git@github.com:husush23/capstone--2.git'
 
 ### Install
 
@@ -66,13 +66,19 @@ You can deploy this project using any hosting server in the world
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors">Hussein Hashi</a>
+## 👥 Authors <a name="authors">Hussein Hashi & Rabaya Rabu</a>
 
-👤 **Author1**
+👤 **Hussein Hashi**
 
 - GitHub: [@githubhandle](https://github.com/husush23)
 - Twitter: [@twitterhandle](https://twitter.com/HusseinKadare2)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hussein-kadare-8aa1361a8/)
+
+👤 **Rabaya Rabu**
+
+- GitHub: [@rabayarabu](https://github.com/githubhandle)
+- Twitter: [@rabaya_rabu](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/rabaya-rabu-142721169/)
 
 <!-- FUTURE FEATURES -->
 
