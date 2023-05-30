@@ -1,12 +1,10 @@
 import fetchData from './getMovies.js';
-import getItemLikes from './getLikeCount.js';
-import appId from './url.js';
 
 const display = async () => {
   const res = await fetchData();
   res.forEach((res, i) => {
-    const itemId = 'item4';
-    const likes = getItemLikes(appId, itemId).then((res) => res);
+    // const itemId = 'item4';
+    // const likes = getItemLikes(appId, itemId).then((res) => res);
 
     const src = res.image.original;
     const { name } = res;

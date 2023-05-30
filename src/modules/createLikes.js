@@ -27,7 +27,7 @@ async function createLike(appId, itemId) {
     console.error('Error while creating the like:', error);
   }
 }
-const appId = 'DtHhjB9N7sexPXDyYGO1'; // Replace with the actual app ID
-const itemId = 'item3'; // Replace with the actual item ID
+// const appId = 'DtHhjB9N7sexPXDyYGO1'; // Replace with the actual app ID
+// const itemId = 'item3'; // Replace with the actual item ID
 // createLike(appId, itemId);
 export default createLike;
