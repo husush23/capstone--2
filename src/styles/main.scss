@@ -64,7 +64,7 @@ li {
   gap: 10px;
 }
 
-.comment {
+.comment-pop {
   align-self: center;
   justify-self: center;
   background-color: rgba(245, 245, 245, 0.2);
@@ -127,14 +127,14 @@ li {
 
 .modal-content {
   background-color: #000; /* Content background color */
-  width: 400px;
-  height: 200px;
+  width: 800px;
   position: absolute;
   top: 50%; /* Center the modal vertically */
   left: 50%; /* Center the modal horizontally */
   transform: translate(-50%, -50%); /* Move it to the center */
   display: flex;
   border: 2px solid #fff;
+  gap: 20px;
 }
 
 .upper {
@@ -150,6 +150,64 @@ li {
 
 .d-image {
   width: 100px;
+}
+
+.comment-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.comment-card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-card input[type='text'],
+.comment-card textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.comment-card input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-card input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.comment-section {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.comment {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment .date {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.comment .content {
+  margin-bottom: 5px;
 }
 
 footer {

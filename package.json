@@ -403,7 +403,6 @@
     "watchpack": "^2.4.0",
     "wbuf": "^1.7.3",
     "webpack-dev-middleware": "^5.3.3",
-    "webpack-dev-server": "^4.15.0",
     "webpack-merge": "^5.9.0",
     "webpack-sources": "^3.2.3",
     "websocket-driver": "^0.7.4",
@@ -433,7 +432,8 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.83.1",
     "webpack-bundle-analyzer": "^4.8.0",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

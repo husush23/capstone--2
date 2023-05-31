@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import fetchData from './getMovies.js';
 
 const display = async () => {
@@ -5,7 +6,7 @@ const display = async () => {
 
   res.forEach((res, i) => {
     const src = res.image.original;
-    const { name } = res;
+    const {name} = res;
 
     const container = document.querySelector('.cards-container');
 
@@ -20,8 +21,8 @@ const display = async () => {
         </div>
       </div>
     
-      <div class="comment">
-        <i class="fa-solid fa-comment"></i>
+      <div class="comment-pop">
+        <i class="fa-solid fa-comment" id="${i}"></i>
         <span class="material-symbols-outlined"> book_online </span>
       </div>
     </div>
