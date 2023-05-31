@@ -21,7 +21,5 @@ async function getItemLikes(appId, itemId) {
 
   return data;
 }
-const appId = 'DtHhjB9N7sexPXDyYGO1'; // Replace with the actual app ID
-const itemId = 0; // Replace with the actual item ID
-// getItemLikes(appId, itemId);
+
 export default getItemLikes;

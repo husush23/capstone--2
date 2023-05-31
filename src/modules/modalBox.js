@@ -1,9 +1,8 @@
 const parentEl = document.querySelector('.cards-container');
 const modal = document.querySelector('.modal');
-const modalBtn = document.querySelector('.x');
 
 // Open modal
-export const openModal = parentEl.addEventListener('click', e => {
+export const openModal = parentEl.addEventListener('click', (e) => {
   if (e.target.matches('.fa-comment')) {
     modal.style.display = 'block';
   }
