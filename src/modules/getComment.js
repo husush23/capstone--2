@@ -1,5 +1,3 @@
-import appId from './url';
-
 async function getComments(appId, itemId) {
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/comments?item_id=${itemId}`;
 

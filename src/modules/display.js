@@ -1,14 +1,11 @@
 import fetchData from './getMovies.js';
-import getItemLikes from './getLikeCount.js';
-import appId from './url.js';
 
-const itemId = 0;
 const display = async () => {
   const res = await fetchData();
 
   res.forEach((res, i) => {
     const src = res.image.original;
-    const name = res.name;
+    const { name } = res;
 
     const container = document.querySelector('.cards-container');
 
