@@ -5,6 +5,10 @@ import fetchData from './modules/getMovies';
 import createLike from './modules/createLikes';
 import getItemLikes from './modules/getLikeCount';
 import updateLikes from './modules/updateLikes';
+import './modules/addLikes.js';
+import './modules/modalBox.js';
+import './modules/createComment.js';
+import './modules/getComment.js';
 
-fetchData();
 display();
+updateLikes();

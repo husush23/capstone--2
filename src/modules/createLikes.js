@@ -28,6 +28,6 @@ async function createLike(appId, itemId) {
   }
 }
 const appId = 'DtHhjB9N7sexPXDyYGO1'; // Replace with the actual app ID
-const itemId = 'item3'; // Replace with the actual item ID
+const itemId = 5; // Replace with the actual item ID
 // createLike(appId, itemId);
 export default createLike;
