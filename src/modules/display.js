@@ -1,13 +1,17 @@
+/*eslint-disable*/
 import fetchData from './getMovies.js';
+export let summary;
 
-const display = async () => {
+export const display = async () => {
   const res = await fetchData();
 
   res.forEach((res, i) => {
     const src = res.image.original;
-    const { name } = res;
+    const {name} = res;
 
     const container = document.querySelector('.cards-container');
+    const p = res.summary;
+    summary = p;
 
     container.innerHTML += `
       <div class="card" id = "${i}">
@@ -17,23 +21,24 @@ const display = async () => {
         <div class="linkes"> 
           <span><i class="fa-regular fa-heart" data-card-id="1" id="${i}"></i></span>
          <p> <span class="likes-count" id="${i}">${0}</span> Likes</p>
+         
         </div>
       </div>
     
-      <div class="comment">
-        <i class="fa-solid fa-comment"></i>
+      <div class="comment-pop">
+        <i class="fa-solid fa-comment " id="${i}"></i>
         <span class="material-symbols-outlined"> book_online </span>
       </div>
     </div>
         `;
   });
 };
-export default display;
+// export default display;
 
-// async function printItems(array) {
-//   await asyncForEach(array, async (item) => {
-//     console.log(item);
-//   });
-// }
-
-// printItems(doDuring);
+const toggle = () => {
+  const elements = document.querySelectorAll('body > *');
+  elements.forEach(element => {
+    element.classList.toggle('invisible');
+  });
+};
+// console.log(summary);

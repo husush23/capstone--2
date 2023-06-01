@@ -1,3 +1,5 @@
+/*eslint-disable*/
+import appId from './url';
 async function getComments(appId, itemId) {
   const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/comments?item_id=${itemId}`;
 
@@ -7,6 +9,7 @@ async function getComments(appId, itemId) {
 
     if (response.ok) {
       console.log('Comments retrieved successfully:', data);
+      return data;
     } else {
       console.log('Failed to retrieve comments. Error:', response.status);
     }
@@ -18,6 +21,7 @@ async function getComments(appId, itemId) {
 // Example usage:
 // getComments(appId, 0);
 // getComments(appId, 1);
-// getComments(appId, 2);
+getComments(appId, 6);
+getComments(appId, 7);
 
 export default getComments;
