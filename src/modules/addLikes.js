@@ -1,6 +1,6 @@
-import createLike from './createLikes';
-import appId from './url';
-import updateLikes from './updateLikes';
+import createLike from './createLikes.js';
+import appId from './url.js';
+import updateLikes from './updateLikes.js';
 
 const addToServer = document
   .querySelector('.cards-container')
@@ -8,6 +8,9 @@ const addToServer = document
     if (e.target.classList.contains('fa-regular')) {
       const { id } = e.target;
       createLike(appId, id);
+      //   e.target.classList.remove('fa-regular');
+      //   e.target.classList.add('fa-solid');
+
       updateLikes();
     }
     updateLikes();
