@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import './styles/main.scss';
-import {display} from './modules/display.js';
+import display from './modules/display.js';
 
 import updateLikes from './modules/updateLikes.js';
 import './modules/addLikes.js';

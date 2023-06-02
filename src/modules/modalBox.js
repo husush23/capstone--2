@@ -1,18 +1,17 @@
-/*eslint-disable*/
 import appId from './url';
 import getComments from './getComment';
-import {summary} from './display';
+
+import fetchData from './getMovies';
+
 const parentEl = document.querySelector('.cards-container');
 const modal = document.querySelector('.modal');
 const form = document.querySelector('form');
 const closeBtn = document.querySelector('.close');
 
 // Open modal
-export const openModal = parentEl.addEventListener('click', e => {
-  if (e.target.matches('.fa-comment')) {
-    modal.style.display = 'block';
-  }
-});
+export const openModal = () => {
+  modal.style.display = 'block';
+};
 
 // Close modal
 const closeModal = () => {
@@ -22,27 +21,35 @@ export const close = closeBtn.addEventListener('click', closeModal);
 
 // Clear previous comment
 
-parentEl.addEventListener('click', e => {
+parentEl.addEventListener('click', (e) => {
   if (e.target.matches('.fa-comment')) {
     const commentSection = document.querySelector('.comment-section');
 
     commentSection.innerHTML = '';
     form.id = e.target.id;
-    const src = e.target.parentElement.parentElement.children[0].src;
-    // const summary = e.target.parentElement.parentElement.children[0];
-    console.log(summary);
-    const image = document.querySelector('.film-image');
-    const details = document.querySelector('.details');
-    details.innerHTML = summary;
-    image.src = src;
+    const { src } = e.target.parentElement.parentElement.children[0];
 
+    const filName = e.target.parentElement.previousElementSibling.children[0].textContent;
     const target = +e.target.id;
+
+    const image = document.querySelector('.film-image');
+    const filmName = document.querySelector('.name');
+    const details = document.querySelector('.details');
+    image.src = src;
+    filmName.innerHTML = filName;
+
     const receiveData = async () => {
       const comments = await getComments(appId, target);
-      comments?.forEach((comment, i) => {
+      const explain = await fetchData();
+      explain.forEach((p) => {
+        if (filName === p.name) details.innerHTML = p.summary;
+      });
+      commentSection.innerHTML = ''; // Clear the existing comments
+
+      comments.forEach((comment, i) => {
         const newComment = `
           <div class="comment" id="${i}">
-            <div class="username" >${comment.username}</div>
+            <div class="username">${comment.username}</div>
             <div class="date">${comment.creation_date}</div>
             <div class="content">${comment.comment}</div>
           </div>
@@ -50,10 +57,16 @@ parentEl.addEventListener('click', e => {
 
         commentSection.innerHTML += newComment;
       });
+
+      const commentCount = comments.length;
+      const commentNumber = document.querySelector('.number');
+      commentNumber.textContent = ` comments(${commentCount})`;
     };
+
     receiveData();
   } else {
     return;
   }
+
   modal.style.display = 'block';
 });

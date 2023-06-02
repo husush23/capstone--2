@@ -1,4 +1,2 @@
 /node_modules/
-/src/modules/createComment.js
-/src/modules/getComment.js
-/src/modules/modalBox.js
+/src/modules/createLikes.test.js
