@@ -1,6 +1,6 @@
-import appId from './url';
-import getComments from './getComment';
-import addComment from './createComment';
+import appId from './url.js';
+import getComments from './getComment.js';
+import addComment from './createComment.js';
 
 const username = document.getElementById('username');
 const comment = document.getElementById('comment');

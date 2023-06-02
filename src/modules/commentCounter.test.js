@@ -1,16 +1,18 @@
 // tests/createLike.test.js
 
 // Import the mock function
-import commentCounter from './commentCounter';
+import commentCounter from './commentCounter.js';
 
 // Mocking the fetch function
 describe('Comments Counter', () => {
   test('Count the number of comments', () => {
-    const myObject = [{
-      0: 'Rabu',
-      1: 'Hussein',
-      2: 'Hashi',
-    }];
+    const myObject = [
+      {
+        0: 'Rabu',
+        1: 'Hussein',
+        2: 'Hashi',
+      },
+    ];
     const newCount = commentCounter(myObject);
     expect(newCount).toBe(1);
   });
