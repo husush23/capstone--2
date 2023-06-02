@@ -1,6 +1,7 @@
-import appId from './url.js';
-import getComments from './getComment.js';
-import fetchData from './getMovies.js';
+import appId from './url';
+import getComments from './getComment';
+
+import fetchData from './getMovies';
 
 const parentEl = document.querySelector('.cards-container');
 const modal = document.querySelector('.modal');

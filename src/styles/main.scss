@@ -6,7 +6,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto 50px;
 }
 
@@ -80,8 +80,6 @@ li {
 .fa-solid,
 .material-symbols-outlined {
   color: red;
-
-  /* font-size: 10px; */
 }
 
 .heart-box {
@@ -95,8 +93,6 @@ li {
 .heart-box::before,
 .heart-box::after {
   content: '';
-  // position: absolute;
-  // top: 0;
   width: 100px;
   height: 160px;
   background-color: red;
