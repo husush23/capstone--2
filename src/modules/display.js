@@ -17,11 +17,12 @@ const display = async () => {
         <div class="linkes"> 
           <span><i class="fa-regular fa-heart" data-card-id="1" id="${i}"></i></span>
          <p> <span class="likes-count" id="${i}">${0}</span> Likes</p>
+         
         </div>
       </div>
     
-      <div class="comment">
-        <i class="fa-solid fa-comment"></i>
+      <div class="comment-pop">
+        <i class="fa-solid fa-comment " id="${i}"></i>
         <span class="material-symbols-outlined"> book_online </span>
       </div>
     </div>
@@ -29,11 +30,3 @@ const display = async () => {
   });
 };
 export default display;
-
-// async function printItems(array) {
-//   await asyncForEach(array, async (item) => {
-//     console.log(item);
-//   });
-// }
-
-// printItems(doDuring);
