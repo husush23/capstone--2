@@ -128,13 +128,17 @@ li {
 .modal-content {
   background-color: #000; /* Content background color */
   width: 800px;
+  height: 100%;
   position: absolute;
   top: 50%; /* Center the modal vertically */
   left: 50%; /* Center the modal horizontally */
   transform: translate(-50%, -50%); /* Move it to the center */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px solid #fff;
   gap: 20px;
+  overflow-y: scroll;
 }
 
 .upper {
@@ -167,7 +171,7 @@ li {
 
 .comment-card input[type='text'],
 .comment-card textarea {
-  width: 100%;
+  width: 95%;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -208,6 +212,53 @@ li {
 
 .comment .content {
   margin-bottom: 5px;
+}
+
+.close {
+  align-self: flex-end;
+  position: absolute;
+  top: -1px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.film-image {
+  width: 100px;
+  margin: auto 50%;
+}
+
+.details {
+  width: 320px;
+}
+
+/* Button styling */
+.submit {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f44;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #f33;
+}
+
+.submit:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

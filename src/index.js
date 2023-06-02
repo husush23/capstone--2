@@ -8,6 +8,11 @@ import './modules/modalBox.js';
 import './modules/createComment.js';
 import './modules/getComment.js';
 import './modules/commentsToUI';
+import './modules/count.js';
 
 display();
 updateLikes();
+
+// document.body.addEventListener('click', e => {
+//   console.log(e.target);
+// });

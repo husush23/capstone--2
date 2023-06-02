@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/667d7efdcc.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="main.css" />
+
     <title>Movie Slider</title>
   </head>
   <body>
@@ -21,7 +21,7 @@
       <div class="navbar">
         <h2 class="logo">Movie concert</h2>
         <ul class="nav-list">
-          <li class="nav-item">Movies</li>
+          <li class="nav-item movies">Movies</li>
           <li class="nav-item">TV</li>
           <li class="nav-item">About</li>
         </ul>
@@ -29,6 +29,13 @@
       <div class="cards-container"></div>
       <div class="modal">
         <div class="modal-content">
+          <div class="image">
+            <img src="" alt="" class="film-image">
+            <h2 class="name"></h2>
+            <div class="details"></div>
+          </div>
+         
+          <p class="close">&#x2715</p>
           <div class="comment-card">
             <form>
               <label for="username">Username:</label>
@@ -37,11 +44,15 @@
               <label for="comment">Comment:</label>
               <textarea id="comment" name="comment"></textarea>
 
-              <button id="submit">Submit</button>
+              <button id="submit" class="submit">Submit</button>
             </form>
           </div>
-
-          <div class="comment-section"></div>
+          <div class="comment-num">
+            <h3 class="number">Comment</h3>
+          </div>
+          <div class="comment-section">
+           <h4>Comment</h4>
+          </div>
         </div>
       </div>
     </div>
