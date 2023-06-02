@@ -20,10 +20,4 @@ async function getComments(appId, itemId) {
   return comments;
 }
 
-// Example usage:
-// getComments(appId, 0);
-// getComments(appId, 1);
-// getComments(appId, 6);
-// getComments(appId, 7);
-
 export default getComments;

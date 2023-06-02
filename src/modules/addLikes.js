@@ -8,9 +8,6 @@ const addToServer = document
     if (e.target.classList.contains('fa-regular')) {
       const { id } = e.target;
       createLike(appId, id);
-      //   e.target.classList.remove('fa-regular');
-      //   e.target.classList.add('fa-solid');
-
       updateLikes();
     }
     updateLikes();
